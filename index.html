@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paisagismo - Paloma &amp; Luis Henrique</title>
-  <meta name="description" content="Projeto de paisagismo residencial com 456 plantas distribuídas em 10 espécies. Paisagismo: Aikiesan Paisagismo. Renderização: Lucas Nakamura Cerejo." />
+  <meta name="description" content="Projeto de paisagismo residencial com 456 plantas distribuídas em 10 espécies. Paisagismo: Paulo Perissoto - Arquiteto e Paisagista. Renderização: Lucas Nakamura Cerejo." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -317,6 +317,25 @@
     #introducao {
       background: var(--color-bg-primary);
     }
+
+    /* ── Planta Baixa Section ── */
+    #planta {
+      background: var(--color-bg-secondary);
+    }
+    .planta-intro {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: var(--color-text-secondary);
+      max-width: 700px;
+      margin-bottom: 3rem;
+    }
+    .planta-intro strong {
+      color: var(--color-text-primary);
+      font-weight: 700;
+    }
+    .planta-container {
+      max-width: 100%;
+    }
     .intro-grid {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -608,7 +627,7 @@
     }
 
     /* ── Anchor offset — keep headings clear of the fixed 68px navbar ── */
-    #introducao, #especies, #renders { scroll-margin-top: 80px; }
+    #introducao, #planta, #especies, #renders { scroll-margin-top: 80px; }
 
     /* ── Side border gradient decoration ── */
     #especies::before,
@@ -727,7 +746,7 @@
       <p class="hero-subtitle">Projeto de Paisagismo Residencial</p>
       <div class="hero-divider"></div>
       <p class="hero-credits">
-        Paisagismo: Aikiesan Paisagismo<br>
+        Paisagismo: Paulo Perissoto - Arquiteto e Paisagista<br>
         Visualizações 3D: Lucas Nakamura Cerejo
       </p>
     </div>
@@ -755,22 +774,44 @@
         </div>
         <div class="intro-text fade-in" style="transition-delay: 0.15s">
           <p>
-            Este projeto residencial integra <strong>456 plantas</strong> distribuídas em
-            <strong>10 espécies</strong> cuidadosamente selecionadas para criar uma composição
-            harmônica entre áreas de lazer e jardins ornamentais.
+            Desenvolvido para uma <strong>residência de estilo clássico</strong>, este projeto de
+            paisagismo integra <strong>456 plantas</strong> em <strong>10 espécies</strong>
+            cuidadosamente selecionadas que dialogam com a elegância atemporal da arquitetura.
           </p>
           <p>
-            O paisagismo valoriza a <strong>área de piscina</strong> com canteiros de
-            Agapanthus e Primavera Branca, complementa o <strong>jardim frontal</strong>
-            com Cedros e arbustos floridos, e cria intimidade nos <strong>espaços laterais</strong>
-            com trepadeiras e forrações.
+            A paleta vegetal privilegia a <strong>sobriedade mediterrânea</strong> com toques
+            de cor estratégicos: Oliveiras evocam jardins clássicos, Agapanthus roxos criam
+            bordaduras formais, e Primaveras Brancas florescem em blocos homogêneos junto à piscina.
           </p>
           <p>
-            A paleta vegetal privilegia <strong>baixa manutenção</strong> e
-            <strong>resistência climática</strong>, preservando as 4 árvores existentes e
-            adicionando espécies que garantem beleza durante todo o ano.
+            O paisagismo valoriza <strong>baixa manutenção e resistência climática</strong>,
+            preservando as 4 árvores existentes e estruturando os <strong>espaços de convivência</strong>
+            com espécies que garantem beleza durante todas as estações do ano.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planta Baixa -->
+  <section id="planta" aria-labelledby="planta-title">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Planta Baixa</p>
+        <h2 class="section-title" id="planta-title">O Projeto <em>em Planta</em></h2>
+        <div class="section-divider"><span class="section-divider-icon">❧</span></div>
+        <p class="planta-intro">
+          A distribuição espacial das <strong>456 plantas</strong> em <strong>10 espécies</strong>
+          cria ambientes integrados que valorizam a arquitetura clássica da residência.
+        </p>
+      </div>
+      <div class="planta-container fade-in" style="transition-delay: 0.15s">
+        <img
+          src="public/images/PRANCHA_PROJETO_DE_PAISAGISMO.webp"
+          alt="Planta Baixa do Projeto de Paisagismo"
+          loading="lazy"
+          style="width: 100%; height: auto; border-radius: var(--radius-card); box-shadow: var(--shadow-card);"
+        />
       </div>
     </div>
   </section>
@@ -822,7 +863,7 @@
     <div class="footer-logo">P <span>&amp;</span> LH</div>
     <div class="footer-divider"></div>
     <p class="footer-credits">
-      <strong>Paisagismo:</strong> Aikiesan Paisagismo<br>
+      <strong>Paisagismo:</strong> Paulo Perissoto - Arquiteto e Paisagista<br>
       <strong>Visualizações 3D:</strong> Lucas Nakamura Cerejo
     </p>
     <p class="footer-copy">© 2026 — Todos os direitos reservados</p>
@@ -876,7 +917,7 @@
       {
         name: 'Agapanto / Crinum',
         sci: 'Agapanthus africanus',
-        desc: 'Herbácea perene com flores roxo/púrpura, formando touceiras volumosas. Plantada próximo ao muro da piscina e colunas da varanda.',
+        desc: 'Herbácea perene de floração roxo-púrpura que forma bordaduras clássicas e elegantes. Suas touceiras volumosas emolduram o muro da piscina e as colunas da varanda, criando ritmo visual e nobreza ao jardim.',
         qty: '120 unidades',
         location: 'Fundos · Fachada',
         img: 'public/images/species/agapanthus-africanus.webp'
@@ -884,7 +925,7 @@
       {
         name: 'Tuia',
         sci: 'Thuja occidentalis',
-        desc: 'Conífera de porte vertical com folhagem verde-escura perene. Sempre emergindo dos canteiros de Agapanthus (6 nos fundos, 2 na fachada).',
+        desc: 'Conífera perene de porte vertical, evocando jardins europeus formais. Emerge estrategicamente dos canteiros de Agapanthus (6 nos fundos, 2 na fachada), criando pontos focais de verde-escuro que estruturam a composição.',
         qty: '8 unidades',
         location: 'Fundos · Fachada',
         img: 'public/images/species/thuja-occidentalis.webp'
@@ -892,7 +933,7 @@
       {
         name: 'Barba de Serpente',
         sci: 'Ophiopogon japonicus',
-        desc: 'Forração de folhagem linear verde-escura. Jardim lateral próximo à rampa da garagem e entre canteiros de Agapanthus na área de lazer.',
+        desc: 'Forração de folhagem linear verde-escura, de textura minimalista e elegante. Delineia caminhos no jardim lateral e cria transições suaves entre os canteiros da área de lazer, conferindo acabamento refinado ao desenho.',
         qty: '96 unidades',
         location: 'Lateral · Lazer',
         img: 'public/images/species/ophiopogon-japonicus.webp'
@@ -900,7 +941,7 @@
       {
         name: 'Primavera Branca',
         sci: 'Bougainvillea spectabilis',
-        desc: 'Arbusto de floração branca abundante. Blocos homogêneos entre os canteiros de Agapanthus no muro próximo à piscina.',
+        desc: 'Primavera de floração branca abundante, plantada em blocos homogêneos que dialogam com a sobriedade da arquitetura clássica. Seus cachos floridos trazem leveza e movimento ao muro da piscina.',
         qty: '60 unidades',
         location: 'Piscina',
         img: 'public/images/species/bougainvillea-spectabilis.webp'
@@ -908,7 +949,7 @@
       {
         name: 'Pleomélia',
         sci: 'Pleomele / Dracaena',
-        desc: 'Arbusto de folhagem variegada. Canteiro da fachada próximo ao muro lateral e canteiro dos fundos ao lado da academia/sala de jogos.',
+        desc: 'Arbusto de folhagem variegada que adiciona textura vertical aos canteiros. Posicionada estrategicamente na fachada e fundos, equilibra a composição com seu porte médio e folhas decorativas.',
         qty: '32 unidades',
         location: 'Fachada · Fundos',
         img: 'public/images/species/pleomele-dracaena.webp'
@@ -916,7 +957,7 @@
       {
         name: 'Oliveira',
         sci: 'Olea europaea',
-        desc: 'Árvore mediterrânea de folhagem prateada. Duas unidades no centro dos canteiros de Barba de Serpente próximos à piscina.',
+        desc: 'Oliveira de folhagem prateada — símbolo máximo dos jardins clássicos mediterrâneos. Duas unidades pontuam o centro dos canteiros próximos à piscina, evocando elegância atemporal e nobreza paisagística.',
         qty: '2 unidades',
         location: 'Piscina',
         img: 'public/images/species/olea-europaea.webp'
@@ -924,7 +965,7 @@
       {
         name: 'Thunbergia Erecta',
         sci: 'Thunbergia erecta',
-        desc: 'Arbusto de floração roxa contínua. 4 unidades no canteiro da área de lazer próximo às Oliveiras, restante no canteiro lateral com visão das suítes 2 e 3.',
+        desc: 'Arbusto de floração roxa contínua que rompe delicadamente a paleta de brancos e verdes. Distribuída entre a área de lazer e o canteiro lateral, adiciona cor sem comprometer a harmonia clássica do conjunto.',
         qty: '72 unidades',
         location: 'Lazer · Lateral',
         img: 'public/images/species/thunbergia-erecta.webp'
@@ -932,7 +973,7 @@
       {
         name: 'Cedro',
         sci: 'Cedrela fissilis',
-        desc: 'Árvore nativa de crescimento rápido. Agrupamentos de 2 ou 3 unidades no meio do gramado frontal, criando sombra e verticalidade.',
+        desc: 'Árvore nativa brasileira de crescimento vigoroso, plantada em agrupamentos no gramado frontal. Cria sombra generosa e verticalidade, estruturando a escala do jardim frente à arquitetura da casa.',
         qty: '8 unidades',
         location: 'Gramado Frontal',
         img: 'public/images/species/cedrela-fissilis.webp'
@@ -940,7 +981,7 @@
       {
         name: 'Thunbergia Arbustiva',
         sci: 'Thunbergia grandiflora',
-        desc: 'Arbusto de floração azul-violeta abundante. Agrupamentos de 3 a 5 unidades no gramado frontal.',
+        desc: 'Arbusto de floração azul-violeta exuberante, disposto em grupos no gramado frontal. Seus cachos de flores trazem dinamismo e cor aos espaços de contemplação, sem competir com a sobriedade da fachada.',
         qty: '18 unidades',
         location: 'Gramado Frontal',
         img: 'public/images/species/thunbergia-arbustiva.webp'
@@ -948,7 +989,7 @@
       {
         name: 'Trepadeira',
         sci: 'Espécie a definir',
-        desc: 'Trepadeira para muro lateral do fundo (academia/sala de jogos), pergolado dos fundos e muro lateral em frente às suítes 2 e 3.',
+        desc: 'Trepadeira selecionada para criar cortinas verdes nos muros laterais e pergolado dos fundos. Completa a composição com verticalidade suave, privacidade e integração entre arquitetura e paisagem.',
         qty: '36 unidades',
         location: 'Lateral · Pergolado',
         img: 'public/images/species/trepadeira-generica.webp'
@@ -956,7 +997,7 @@
     ];
 
     /* ─── Renders Data ─── */
-    const RENDERS = Array.from({length: 31}, (_, i) => ({
+    const RENDERS = Array.from({length: 30}, (_, i) => ({
       src: `public/images/renders/render-${String(i + 1).padStart(2, '0')}.webp`,
       label: `Visualização ${String(i + 1).padStart(2, '0')}`,
       index: i

@@ -37,6 +37,6 @@ Acesse o site em: [https://aikiesan.github.io/Paisagismo_Paloma_Henrique/](https
 
 ---
 
-**Paisagismo:** Aikiesan Paisagismo
+**Paisagismo:** Paulo Perissoto - Arquiteto e Paisagista
 **Renderização:** Lucas Nakamura Cerejo
-**Ano:** 2025
+**Ano:** 2026
