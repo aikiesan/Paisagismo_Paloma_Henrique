@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paisagismo - Paloma &amp; Luis Henrique</title>
-  <meta name="description" content="Projeto de paisagismo residencial com 456 plantas distribuídas em 10 espécies. Paisagismo: Paulo Perissoto - Arquiteto e Paisagista. Renderização: Lucas Nakamura Cerejo." />
+  <meta name="description" content="Projeto de paisagismo residencial com 14 espécies selecionadas. Paisagismo: Paulo Perissoto - Arquiteto e Paisagista. Renderização: Lucas Nakamura Cerejo." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -767,21 +767,21 @@
           <h2 class="section-title" id="intro-title">Uma paisagem<br><em>que respira</em></h2>
           <div class="section-divider"><span class="section-divider-icon">❧</span></div>
           <div class="intro-tags">
-            <span class="intro-tag">456 PLANTAS</span>
-            <span class="intro-tag">10 ESPÉCIES</span>
+            <span class="intro-tag">14 ESPÉCIES</span>
             <span class="intro-tag">PISCINA + JARDINS</span>
           </div>
         </div>
         <div class="intro-text fade-in" style="transition-delay: 0.15s">
           <p>
             Desenvolvido para uma <strong>residência de estilo clássico</strong>, este projeto de
-            paisagismo integra <strong>456 plantas</strong> em <strong>10 espécies</strong>
+            paisagismo integra <strong>14 espécies</strong>
             cuidadosamente selecionadas que dialogam com a elegância atemporal da arquitetura.
           </p>
           <p>
             A paleta vegetal privilegia a <strong>sobriedade mediterrânea</strong> com toques
-            de cor estratégicos: Oliveiras evocam jardins clássicos, Agapanthus roxos criam
-            bordaduras formais, e Primaveras Brancas florescem em blocos homogêneos junto à piscina.
+            de cor estratégicos: Ciprestes Italianos e Kaizukas definem a verticalidade, Oliveiras e
+            Lavanda evocam jardins clássicos, Agapanthus criam bordaduras formais, e o Jasmim
+            Stephanotis perfuma o pergolado e os muros laterais.
           </p>
           <p>
             O paisagismo valoriza <strong>baixa manutenção e resistência climática</strong>,
@@ -801,7 +801,7 @@
         <h2 class="section-title" id="planta-title">O Projeto <em>em Planta</em></h2>
         <div class="section-divider"><span class="section-divider-icon">❧</span></div>
         <p class="planta-intro">
-          A distribuição espacial das <strong>456 plantas</strong> em <strong>10 espécies</strong>
+          A distribuição espacial das <strong>14 espécies</strong>
           cria ambientes integrados que valorizam a arquitetura clássica da residência.
         </p>
       </div>
@@ -915,84 +915,116 @@
     /* ─── Species Data ─── */
     const SPECIES = [
       {
-        name: 'Agapanto / Crinum',
+        name: 'Agapanthus',
         sci: 'Agapanthus africanus',
-        desc: 'Herbácea perene de floração roxo-púrpura que forma bordaduras clássicas e elegantes. Suas touceiras volumosas emolduram o muro da piscina e as colunas da varanda, criando ritmo visual e nobreza ao jardim.',
+        desc: 'Herbácea perene de floração roxo-púrpura que forma bordaduras clássicas e elegantes. Suas touceiras volumosas emolduram a fachada frontal e o muro do fundo da piscina, criando ritmo visual e nobreza ao jardim.',
         qty: '120 unidades',
-        location: 'Fundos · Fachada',
+        location: 'Fachada · Fundo da Piscina',
         img: 'public/images/species/agapanthus-africanus.webp'
       },
       {
-        name: 'Tuia',
-        sci: 'Thuja occidentalis',
-        desc: 'Conífera perene de porte vertical, evocando jardins europeus formais. Emerge estrategicamente dos canteiros de Agapanthus (6 nos fundos, 2 na fachada), criando pontos focais de verde-escuro que estruturam a composição.',
-        qty: '8 unidades',
-        location: 'Fundos · Fachada',
-        img: 'public/images/species/thuja-occidentalis.webp'
+        name: 'Cipreste Italiano',
+        sci: 'Cupressus sempervirens',
+        desc: 'Conífera perene de porte vertical icônico, símbolo dos jardins mediterrâneos clássicos. Pontua a fachada frontal e estrutura o corredor da garagem com sua silhueta elegante e esbelta, conferindo altura e distinção ao conjunto.',
+        qty: '16 unidades',
+        location: 'Fachada · Corredor da Garagem',
+        img: 'public/images/species/cupressus-sempervirens.webp'
       },
       {
-        name: 'Barba de Serpente',
-        sci: 'Ophiopogon japonicus',
-        desc: 'Forração de folhagem linear verde-escura, de textura minimalista e elegante. Delineia caminhos no jardim lateral e cria transições suaves entre os canteiros da área de lazer, conferindo acabamento refinado ao desenho.',
-        qty: '96 unidades',
-        location: 'Lateral · Lazer',
-        img: 'public/images/species/ophiopogon-japonicus.webp'
+        name: 'Kaizuka',
+        sci: "Juniperus chinensis 'Kaizuka'",
+        desc: 'Junípero de crescimento tortuoso e arquitetural, com folhagem verde-intensa em espiral. Elemento de destaque na fachada frontal e no fundo da piscina, seu porte esculpido acrescenta caráter único e movimento ao jardim.',
+        qty: 'A definir',
+        location: 'Fachada · Fundo da Piscina',
+        img: 'public/images/species/juniperus-kaizuka.webp'
       },
       {
-        name: 'Primavera Branca',
-        sci: 'Bougainvillea spectabilis',
-        desc: 'Primavera de floração branca abundante, plantada em blocos homogêneos que dialogam com a sobriedade da arquitetura clássica. Seus cachos floridos trazem leveza e movimento ao muro da piscina.',
-        qty: '60 unidades',
-        location: 'Piscina',
-        img: 'public/images/species/bougainvillea-spectabilis.webp'
+        name: 'Viburno',
+        sci: 'Viburnum sp.',
+        desc: 'Arbusto topiado de folhagem densa e compacta, presente na fachada em forma redonda, no fundo esquerdo em forma de torre e nos canteiros arredondados. Sua versatilidade formal confere estrutura e elegância clássica a diferentes áreas do jardim.',
+        qty: 'A definir',
+        location: 'Fachada · Fundo (torre) · Canteiros',
+        img: 'public/images/species/viburnum.webp'
       },
       {
-        name: 'Pleomélia',
-        sci: 'Pleomele / Dracaena',
-        desc: 'Arbusto de folhagem variegada que adiciona textura vertical aos canteiros. Posicionada estrategicamente na fachada e fundos, equilibra a composição com seu porte médio e folhas decorativas.',
-        qty: '32 unidades',
-        location: 'Fachada · Fundos',
-        img: 'public/images/species/pleomele-dracaena.webp'
-      },
-      {
-        name: 'Oliveira',
-        sci: 'Olea europaea',
-        desc: 'Oliveira de folhagem prateada — símbolo máximo dos jardins clássicos mediterrâneos. Duas unidades pontuam o centro dos canteiros próximos à piscina, evocando elegância atemporal e nobreza paisagística.',
-        qty: '2 unidades',
-        location: 'Piscina',
-        img: 'public/images/species/olea-europaea.webp'
+        name: 'Pitosphorum',
+        sci: 'Pittosporum tobira',
+        desc: 'Arbusto de folhagem verde-brilhante, resistente e de fácil manutenção. Topiado em formato redondo, é alternativa elegante ao Viburno na fachada e nos canteiros arredondados, criando volumes formais de grande charme mediterrâneo.',
+        qty: 'A definir',
+        location: 'Fachada · Canteiros Arredondados',
+        img: 'public/images/species/pittosporum-tobira.webp'
       },
       {
         name: 'Thunbergia Erecta',
         sci: 'Thunbergia erecta',
-        desc: 'Arbusto de floração roxa contínua que rompe delicadamente a paleta de brancos e verdes. Distribuída entre a área de lazer e o canteiro lateral, adiciona cor sem comprometer a harmonia clássica do conjunto.',
+        desc: 'Arbusto de floração roxa contínua que rompe delicadamente a paleta de brancos e verdes. Distribuída no canteiro lateral, adiciona cor vibrante sem comprometer a harmonia clássica do conjunto.',
         qty: '72 unidades',
-        location: 'Lazer · Lateral',
+        location: 'Lateral',
         img: 'public/images/species/thunbergia-erecta.webp'
       },
       {
-        name: 'Cedro',
-        sci: 'Cedrela fissilis',
-        desc: 'Árvore nativa brasileira de crescimento vigoroso, plantada em agrupamentos no gramado frontal. Cria sombra generosa e verticalidade, estruturando a escala do jardim frente à arquitetura da casa.',
-        qty: '8 unidades',
-        location: 'Gramado Frontal',
-        img: 'public/images/species/cedrela-fissilis.webp'
-      },
-      {
-        name: 'Thunbergia Arbustiva',
-        sci: 'Thunbergia grandiflora',
-        desc: 'Arbusto de floração azul-violeta exuberante, disposto em grupos no gramado frontal. Seus cachos de flores trazem dinamismo e cor aos espaços de contemplação, sem competir com a sobriedade da fachada.',
-        qty: '18 unidades',
-        location: 'Gramado Frontal',
-        img: 'public/images/species/thunbergia-arbustiva.webp'
-      },
-      {
-        name: 'Trepadeira',
-        sci: 'Espécie a definir',
-        desc: 'Trepadeira selecionada para criar cortinas verdes nos muros laterais e pergolado dos fundos. Completa a composição com verticalidade suave, privacidade e integração entre arquitetura e paisagem.',
+        name: 'Jasmim Stephanotis',
+        sci: 'Stephanotis floribunda',
+        desc: 'Trepadeira de floração branca perfumada, escolhida como o jasmim padrão de todo o projeto. Cobre os muros laterais e o pergolado dos fundos com cortinas verdes e floridas, integrando arquitetura e natureza com suavidade e fragrância inconfundível.',
         qty: '36 unidades',
         location: 'Lateral · Pergolado',
-        img: 'public/images/species/trepadeira-generica.webp'
+        img: 'public/images/species/stephanotis-floribunda.webp'
+      },
+      {
+        name: 'Capim do Texas',
+        sci: 'Nassella tenuissima',
+        desc: 'Gramínea ornamental de folhagem fina e movimentada, de aspecto leve e contemporâneo. Plantada no corredor da garagem ao lado dos Ciprestes Italianos, cria textura contrastante e naturalidade, trazendo movimento ao jardim.',
+        qty: 'A definir',
+        location: 'Corredor da Garagem',
+        img: 'public/images/species/nassella-tenuissima.webp'
+      },
+      {
+        name: 'Samambaia',
+        sci: 'Nephrolepis exaltata',
+        desc: 'Feto exuberante de folhagem verde-esmeralda em cascata, formando uma parede viva ao final do corredor da garagem. Cria privacidade, frescor e transição suave entre os espaços, com presença marcante e tropical.',
+        qty: 'A definir',
+        location: 'Corredor da Garagem',
+        img: 'public/images/species/nephrolepis-exaltata.webp'
+      },
+      {
+        name: 'Oliveira',
+        sci: 'Olea europaea',
+        desc: 'Oliveira de folhagem prateada — símbolo máximo dos jardins clássicos mediterrâneos. Duas unidades pontuam o centro dos canteiros arredondados, evocando elegância atemporal e nobreza paisagística.',
+        qty: '2 unidades',
+        location: 'Canteiros Arredondados',
+        img: 'public/images/species/olea-europaea.webp'
+      },
+      {
+        name: 'Lavanda',
+        sci: 'Lavandula angustifolia',
+        desc: 'Planta aromática mediterrânea de floração lilás que completa a composição dos canteiros arredondados com cor e perfume inconfundíveis. Evoca jardins provençais clássicos e integra harmonia cromática com Oliveira e Viburno.',
+        qty: 'A definir',
+        location: 'Canteiros Arredondados',
+        img: 'public/images/species/lavandula-angustifolia.webp'
+      },
+      {
+        name: 'Primavera Branca',
+        sci: 'Bougainvillea spectabilis',
+        desc: 'Primavera de floração branca abundante, plantada em blocos homogêneos no fundo da piscina. Seus cachos floridos trazem leveza e movimento ao muro, dialogando com a sobriedade da arquitetura clássica.',
+        qty: '60 unidades',
+        location: 'Fundo da Piscina',
+        img: 'public/images/species/bougainvillea-spectabilis.webp'
+      },
+      {
+        name: 'Grama Branca',
+        sci: 'Ophiopogon jaburan',
+        desc: 'Forração de folhagem linear com listras branco-esverdeadas, que cria bordaduras luminosas e refinadas no fundo da piscina. Sua textura delicada contrasta com os volumes mais densos e conduz o olhar ao longo da piscina.',
+        qty: '96 unidades',
+        location: 'Fundo da Piscina',
+        img: 'public/images/species/ophiopogon-jaburan.webp'
+      },
+      {
+        name: 'Ipê Branco',
+        sci: 'Tabebuia roseoalba',
+        desc: 'Árvore nativa brasileira de floração branca exuberante na calçada da rua. Seu florescimento espetacular valoriza a chegada à residência, criando um portal natural de impacto visual e identidade paisagística única.',
+        qty: 'A definir',
+        location: 'Calçada da Rua',
+        img: 'public/images/species/tabebuia-roseoalba.webp'
       },
     ];
 
